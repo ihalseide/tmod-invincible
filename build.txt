@@ -1,3 +1,7 @@
 displayName = Invincibility Potion
 author = ihalseide
-version = 0.3
+version = 0.4
+hideCode = false
+hideResources = false
+includeSource = true
+buildIgnore = .vs\*, Properties\*, ignore\*, *.csproj, *.user, lib\*, .gitignore
