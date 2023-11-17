@@ -6,6 +6,7 @@ namespace IzakModOne {
         public override ConfigScope Mode => ConfigScope.ServerSide;
 
         [DefaultValue(60)]
+        [ReloadRequired]
         public int InvinciblePotionDurationSeconds;
     }
 }
