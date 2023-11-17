@@ -1,0 +1,3 @@
+displayName = 1st Test Mod
+author = ihalseide
+version = 0.1

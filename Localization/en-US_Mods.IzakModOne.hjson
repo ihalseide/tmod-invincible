@@ -1,0 +1,25 @@
+# This file will automatically update with entries for new content after a build and reload
+
+Items: {
+	InvincibilityPotion: {
+		DisplayName: Potion of Invincibility
+		Tooltip: Grants immunity to damage and debuffs
+	}
+
+	NoClipPotion: {
+		DisplayName: No Clip Potion
+		Tooltip: ""
+	}
+}
+
+Buffs: {
+	Invincibility: {
+		DisplayName: Invincibility
+		Description: Immune to damage and debuffs
+	}
+
+	NoClip: {
+		DisplayName: No Clip
+		Description: Mods.IzakModOne.Buffs.NoClip.Description
+	}
+}
