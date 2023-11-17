@@ -3,12 +3,9 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace IzakModOne.Items
-{
-    internal class InvincibilityPotion : ModItem
-    {
-        public override void SetDefaults()
-        {
+namespace IzakModOne.Items {
+    internal class InvincibilityPotion : ModItem {
+        public override void SetDefaults() {
             Item.width = 14;
             Item.height = 24;
             Item.scale = 0.5f;
@@ -27,8 +24,7 @@ namespace IzakModOne.Items
             Item.buffTime = 60 * 60; // (there are 60 ticks per second)
         }
 
-        public override void AddRecipes()
-        {
+        public override void AddRecipes() {
             Recipe r = CreateRecipe();
             r.AddIngredient(ItemID.BottledHoney);
             r.AddIngredient(ItemID.FallenStar, 5);

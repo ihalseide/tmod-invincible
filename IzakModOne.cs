@@ -1,8 +1,6 @@
 using Terraria.ModLoader;
 
-namespace IzakModOne
-{
-	public class IzakModOne : Mod
-	{
+namespace IzakModOne {
+	public class IzakModOne : Mod {
 	}
 }
