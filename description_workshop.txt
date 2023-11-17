@@ -1,4 +1,5 @@
 Adds the Potion of Invincibility. It can be crafted when near a bottle AND a cooking pot.
+
 Ingredients:
 - Bottled Honey
 - Fallen Star (x5)
@@ -6,3 +7,5 @@ Ingredients:
 - Daybloom
 - LifeCrystal
 - Mushroom
+
+The source code for this mod is published at https://github.com/ihalseide/tmod-invincible
