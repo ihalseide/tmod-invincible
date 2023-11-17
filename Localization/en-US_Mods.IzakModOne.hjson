@@ -13,3 +13,14 @@ Buffs: {
 		Description: Immune to damage and debuffs
 	}
 }
+
+Configs: {
+	IzakModOne: {
+		DisplayName: Invincibility Server Config
+
+		InvinciblePotionDurationSeconds: {
+			Label: Invincible buff duration (seconds)
+			Tooltip: ""
+		}
+	}
+}

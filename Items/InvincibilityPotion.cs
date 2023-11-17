@@ -2,6 +2,7 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.ModLoader.Config;
 
 namespace IzakModOne.Items {
     internal class InvincibilityPotion : ModItem {
@@ -14,14 +15,14 @@ namespace IzakModOne.Items {
             Item.rare = ItemRarityID.Green;
 
             Item.consumable = true;
-            Item.useAnimation = 15;
-            Item.useTime = 50;
+            Item.useAnimation = 20;
+            Item.useTime = 60;
             Item.useTurn = true;
             Item.UseSound = SoundID.Item3;
             Item.useStyle = ItemUseStyleID.DrinkLong;
 
             Item.buffType = ModContent.BuffType<Invincibility>();
-            Item.buffTime = 60 * 60; // (there are 60 ticks per second)
+            Item.buffTime = Item.useTime + 60 * ModContent.GetInstance<IzakModOne>().InvinciblePotionDurationSeconds; // (there are 60 ticks per second)
         }
 
         public override void AddRecipes() {
