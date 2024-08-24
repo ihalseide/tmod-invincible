@@ -3,7 +3,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace InvincibilityPotionMod
+namespace InvincibilityPotion
 {
     public class GlobalPlayer : ModPlayer
     {

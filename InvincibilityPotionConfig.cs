@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Config;
 
-namespace InvincibilityPotionMod
+namespace InvincibilityPotion
 {
-    public class InvincibilityPotionMod : ModConfig
+    public class InvincibilityPotionConfig : ModConfig
     {
         public override ConfigScope Mode => ConfigScope.ServerSide;
 

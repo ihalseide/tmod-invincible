@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace InvincibilityPotionMod.Buffs
+namespace InvincibilityPotion.Buffs
 {
     internal class Invincibility : ModBuff
     {
