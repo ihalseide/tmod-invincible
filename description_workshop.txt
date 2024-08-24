@@ -1,8 +1,8 @@
-Adds the Potion of Invincibility. It can be crafted when near a bottle AND a cooking pot.
+Adds the Potion of Invincibility, which may be crafted when near both a Bottle and a Cooking Pot.
 
 Ingredients:
 - Bottled Honey
-- Fallen Star (x5)
+- Fallen Star (x10)
 - Blinkroot
 - Daybloom
 - LifeCrystal
