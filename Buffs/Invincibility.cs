@@ -3,13 +3,13 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace InvincibilityPotion.Buffs
-{
-    internal class Invincibility : ModBuff
-    {
+namespace IzakModOne.Buffs {
+    internal class Invincibility : ModBuff {
 
-        // List of debuffs that Invincibility will make the player immune to (should be almost all of them).
-        public Int32[] immuninties = [
+        /**
+         * List of buffs to make invincibility be immune to.
+         */
+        public Int32[] immunities = [
             BuffID.Poisoned,
             BuffID.OnFire,
             BuffID.OnFire3,
@@ -31,22 +31,16 @@ namespace InvincibilityPotion.Buffs
             BuffID.Cursed,
         ];
 
-        public override void SetStaticDefaults()
-        {
+        public override void SetStaticDefaults() {
             Main.debuff[Type] = false;
             Main.buffNoTimeDisplay[Type] = false;
         }
-
-        public override void Update(Player player, ref int buffIndex)
-        {
+        public override void Update(Player player, ref int buffIndex) {
             GlobalPlayer thePlayer = player.GetModPlayer<GlobalPlayer>();
-
-            // This effect sets the flag for having invincibility
             thePlayer.hasInvincibility = true;
 
-            for (int i = 0; i < immuninties.Length; i++)
-            {
-                thePlayer.Player.buffImmune[immuninties[i]] = true;
+            for (int i = 0; i < immunities.Length; i++) {
+                thePlayer.Player.buffImmune[immunities[i]] = true;
             }
         }
     }

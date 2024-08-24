@@ -1,12 +1,11 @@
-﻿using InvincibilityPotion.Buffs;
+﻿using IzakModOne.Buffs;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Config;
 
-namespace InvincibilityPotion.Items {
-    internal class PotionOfInvincibility : ModItem {
-
+namespace IzakModOne.Items {
+    internal class InvincibilityPotion : ModItem {
         public override void SetDefaults() {
             Item.width = 14;
             Item.height = 24;
@@ -23,9 +22,7 @@ namespace InvincibilityPotion.Items {
             Item.useStyle = ItemUseStyleID.DrinkLong;
 
             Item.buffType = ModContent.BuffType<Invincibility>();
-
-            // Convert the configurable potion duration to ticks (there are 60 ticks per second)
-            Item.buffTime = Item.useTime + 60 * ModContent.GetInstance<InvincibilityPotionConfig>().InvinciblePotionDurationSeconds; 
+            Item.buffTime = Item.useTime + 60 * ModContent.GetInstance<IzakModOne>().InvinciblePotionDurationSeconds; // (there are 60 ticks per second)
         }
 
         public override void AddRecipes() {

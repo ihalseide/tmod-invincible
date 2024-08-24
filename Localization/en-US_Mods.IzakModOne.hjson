@@ -1,7 +1,7 @@
 # This file will automatically update with entries for new content after a build and reload
 
 Items: {
-	PotionOfInvincibility: {
+	InvincibilityPotion: {
 		DisplayName: Potion of Invincibility
 		Tooltip: Grants immunity to damage and debuffs
 	}
@@ -15,20 +15,11 @@ Buffs: {
 }
 
 Configs: {
-	InvincibilityPotionMod: {
+	IzakModOne: {
 		DisplayName: Invincibility Server Config
 
 		InvinciblePotionDurationSeconds: {
 			Label: Invincible buff duration (seconds)
-			Tooltip: ""
-		}
-	}
-
-	InvincibilityPotionConfig: {
-		DisplayName: Invincibility Potion Config
-
-		InvinciblePotionDurationSeconds: {
-			Label: Invincible Potion Duration Seconds
 			Tooltip: ""
 		}
 	}

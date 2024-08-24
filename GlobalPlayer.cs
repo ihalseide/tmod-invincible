@@ -3,35 +3,27 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace InvincibilityPotion
-{
-    public class GlobalPlayer : ModPlayer
-    {
+namespace IzakModOne {
+	public class GlobalPlayer : ModPlayer {
         public bool hasInvincibility;
 
-        public override void ResetEffects()
-        {
+        public override void ResetEffects() {
             hasInvincibility = false;
         }
 
-        public override bool ImmuneTo(PlayerDeathReason damageSource, int cooldownCounter, bool dodgeable)
-        {
+        public override bool ImmuneTo(PlayerDeathReason damageSource, int cooldownCounter, bool dodgeable) {
             // INVINCIBILITY - immune to everything
-            if (Player == Main.LocalPlayer && hasInvincibility)
-            {
+            if (Player == Main.LocalPlayer && hasInvincibility) {
                 return true;
             }
-            else
-            {
+            else {
                 return base.ImmuneTo(damageSource, cooldownCounter, dodgeable);
             }
         }
 
-        public override void PreUpdateBuffs()
-        {
+        public override void PreUpdateBuffs() {
             // INVINCIBILITY - Remove 'Cursed' debuff from player
-            if (hasInvincibility)
-            {
+            if (hasInvincibility) {
                 Player.ClearBuff(BuffID.Cursed);
             }
         }

@@ -1,4 +1,4 @@
-Adds the Potion of Invincibility, which may be crafted when near both a Bottle and a Cooking Pot.
+Adds the Potion of Invincibility. It can be crafted when near a bottle AND a cooking pot.
 
 Ingredients:
 - Bottled Honey
